@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свежая клубника в Тюмени</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🍓 СВЕЖАЯ КЛУБНИКА</h1>
+        <p>Доставка по Тюмени от 9:00 до 21:00</p>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Спелая, сочная, ароматная</h2>
+            <p>Только что с грядки! Без химии и ГМО</p>
+            <a href="#order" class="btn">ЗАКАЗАТЬ СЕЙЧАС</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>О нашей клубнике</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Мы выращиваем лучшие сорта клубники в экологически чистых условиях. Наша ягода:</p>
+                <ul>
+                    <li>🍓 Сладкая и ароматная</li>
+                    <li>💪 Без нитратов и химии</li>
+                    <li>🌱 Собрана вручную</li>
+                    <li>🚚 Доставка день в день</li>
+                </ul>
+            </div>
+            <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Клубника">
+        </div>
+    </section>
+
+    <section class="varieties">
+        <h2>Сорта клубники</h2>
+        <div class="varieties-grid">
+            <div class="variety-card">
+                <h3>🍓 Альбион</h3>
+                <p>Крупная, сладкая, с насыщенным ароматом. Идеально для десертов.</p>
+                <p class="price">500 руб/кг</p>
+            </div>
+            <div class="variety-card">
+                <h3>🍓 Клери</h3>
+                <p>Ранний сорт, нежная и сочная. Тает во рту!</p>
+                <p class="price">550 руб/кг</p>
+            </div>
+            <div class="variety-card">
+                <h3>🍓 Мармелада</h3>
+                <p>Плотная ягода, отлично хранится. Сладкая с кислинкой.</p>
+                <p class="price">520 руб/кг</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <h2>Польза клубники</h2>
+        <div class="benefits-grid">
+            <div class="benefit">
+                <h3>💪 Витамин С</h3>
+                <p>Больше чем в лимоне! Укрепляет иммунитет</p>
+            </div>
+            <div class="benefit">
+                <h3>🧠 Улучшает память</h3>
+                <p>Антиоксиданты защищают мозг</p>
+            </div>
+            <div class="benefit">
+                <h3>❤️ Для сердца</h3>
+                <p>Снижает давление и укрепляет сосуды</p>
+            </div>
+            <div class="benefit">
+                <h3>🌟 Для красоты</h3>
+                <p>Омолаживает кожу и улучшает цвет лица</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order">
+        <h2>Форма заказа</h2>
+        <form id="orderForm">
+            <h3>Контактные данные:</h3>
+            <input type="text" id="name" placeholder="Ваше имя *" required>
+            <input type="tel" id="phone" placeholder="Ваш номер телефона *" required>
+            <input type="number" id="kg" placeholder="Количество кг *" min="0.5" step="0.5" required>
+            <textarea id="comment" placeholder="Комментарий к заказу"></textarea>
+
+            <h3>Доставка:</h3>
+            <input type="text" id="city" value="Тюмень" placeholder="Город">
+            <input type="text" id="street" placeholder="Улица *" required>
+            <div class="row">
+                <input type="text" id="house" placeholder="Дом *" required>
+                <input type="text" id="entrance" placeholder="Подъезд">
+            </div>
+            <div class="row">
+                <input type="text" id="floor" placeholder="Этаж">
+                <input type="text" id="apartment" placeholder="Квартира">
+            </div>
+
+            <h3>Дата и время доставки:</h3>
+            <input type="date" id="deliveryDate" required>
+            <input type="time" id="deliveryTime" required>
+
+            <h3>Номер телефона получателя:</h3>
+            <input type="tel" id="recipientPhone" placeholder="Номер получателя *" required>
+
+            <button type="submit" class="btn-submit">ОТПРАВИТЬ ЗАКАЗ В TELEGRAM</button>
+        </form>
+        <div id="successMessage" style="display:none; color: green; text-align: center; margin-top: 20px;">
+            ✅ Заказ отправлен! Скоро с вами свяжутся.
+        </div>
+    </section>
+
+    <section class="contacts">
+        <h2>Контакты</h2>
+        <div class="contacts-info">
+            <p><strong>📞 Телефон:</strong> +7 (996) 946-59-79</p>
+            <p><strong>📍 Адрес:</strong> г. Тюмень, ул. Павла Шарова, 3к1</p>
+            <p><strong>⏰ Режим работы:</strong> с 9:00 до 21:00 ежедневно</p>
+            <p><strong>🚚 Доставка:</strong> по Тюмени день в день</p>
+        </div>
+        <div class="map">
+            <!-- Яндекс Карта -->
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=65.552145%2C57.152985&z=16&pt=65.552145,57.152985,pm2rdl&l=map" width="100%" height="400" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>🍓 Свежая клубника в Тюмени © 2024 | Доставка 24/7 (заказы через форму)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
